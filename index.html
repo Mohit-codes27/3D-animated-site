@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="startBtn">
+        <button>Start Quiz</button>
+    </div>
+    <div class="infoBox">
+        <div class="infoTitle"><span>Some Rules of this Quiz</span></div>
+        <div class="infoList">
+            <div class="info">You will only <span>15 seconds</span> per each question.</div>
+            <div class="info">Once you select you answer, it can't be undone</div>
+            <div class="info">You can't select any option once time goes off.</div>
+            <div class="info">You can't exit from the Quiz while you're playing.</div>
+            <div class="info">You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quizBox">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="timeLeftTxt">Time Left</div>
+                <div class="timerSec">15</div>
+            </div>
+            <div class="timeLine"></div>
+        </header>
+        <section>
+            <div class="queText"></div>
+            <div class="optionList"></div>
+        </section>
+
+        <footer>
+            <div class="totalQue"></div>
+            <button class="nextBtn">Next Que</button>
+        </footer>
+    </div>
+
+    <div class="resultBox">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="completeText">You've completed the Quiz!</div>
+        <div class="scoreText"></div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
